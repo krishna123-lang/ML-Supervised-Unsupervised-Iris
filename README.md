@@ -132,31 +132,6 @@ Although clustering is unsupervised, K-Means successfully identified meaningful 
 
 ---
 
-## 📅 Project Timeline
-
-Day 1:
-- Dataset analysis
-- Data preprocessing
-- Exploratory Data Analysis
-
-Day 2:
-- KNN implementation
-- Hyperparameter tuning
-- Model evaluation
-
-Day 3:
-- K-Means implementation
-- Elbow method analysis
-- Silhouette score calculation
-- Cluster comparison
-
-Day 4:
-- Documentation
-- Repository structuring
-- Final review and submission
-
----
-
 ## ▶️ How to Run the Project
 
 ### 🔹 Option 1: Open Directly in Google Colab
