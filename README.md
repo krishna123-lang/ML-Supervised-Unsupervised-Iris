@@ -7,7 +7,7 @@
 
 This project demonstrates the implementation of both **Supervised** and **Unsupervised** Machine Learning algorithms using the Iris dataset.
 
-The objective is to understand the complete Machine Learning workflow including:
+The objective of this project is to understand and implement the complete Machine Learning workflow, including:
 
 - Data preprocessing
 - Exploratory Data Analysis (EDA)
@@ -17,44 +17,48 @@ The objective is to understand the complete Machine Learning workflow including:
 - Clustering validation
 - Comparative analysis
 
-This project showcases structured ML implementation using Python and Scikit-learn.
+This project reflects structured problem-solving and practical implementation of core ML concepts.
 
 ---
 
 ## 📊 Dataset Description
 
-- Dataset: Iris Dataset (Scikit-learn)
+- Dataset: Iris Dataset (from Scikit-learn)
 - Total Samples: 150
 - Features:
   - Sepal Length
   - Sepal Width
   - Petal Length
   - Petal Width
-- Classes:
+- Target Classes:
   - Setosa
   - Versicolor
   - Virginica
 
-The dataset:
-- Contains no missing values
-- Is balanced (50 samples per class)
-- Has well-separated feature distributions
+### Dataset Characteristics:
+- No missing values
+- Balanced dataset (50 samples per class)
+- Well-separated feature distributions
+- Petal features show strong correlation with target class
 
 ---
 
 ## 🔬 Technical Approach
 
 ### 1️⃣ Data Preprocessing
-- Converted dataset into Pandas DataFrame
+- Loaded dataset using Scikit-learn
+- Converted to Pandas DataFrame
 - Verified data integrity
 - Checked for missing values
 - Analyzed class distribution
-- Applied feature scaling using StandardScaler (important for distance-based models)
+- Applied feature scaling using StandardScaler (important for distance-based models like KNN)
+
+---
 
 ### 2️⃣ Exploratory Data Analysis (EDA)
-- Pairplot visualization for class separability
-- Correlation heatmap
-- Feature relationship analysis
+- Generated pairplot visualization
+- Created correlation heatmap
+- Analyzed feature relationships
 - Identified petal length and petal width as strong discriminators
 
 ---
@@ -62,12 +66,12 @@ The dataset:
 ## 🔷 Supervised Learning: K-Nearest Neighbors (KNN)
 
 ### Steps Performed:
-- Train-Test Split (80-20)
+- Train-Test Split (80% training, 20% testing)
 - Feature Scaling
-- Hyperparameter tuning (K from 1 to 20)
-- Optimal K selection
+- Hyperparameter tuning (K values from 1 to 20)
+- Optimal K selection based on minimum error rate
 - Final model training
-- Evaluation using:
+- Model evaluation using:
   - Accuracy
   - Precision
   - Recall
@@ -76,40 +80,46 @@ The dataset:
 
 ### 📈 Results:
 - Accuracy: 1.00 (100%)
-- Strong class separability
-- No misclassifications in test data
+- Clear class separation
+- No misclassifications in test dataset
+
+### Key Insight:
+Feature scaling significantly improved performance due to the distance-based nature of KNN.
 
 ---
 
 ## 🔶 Unsupervised Learning: K-Means Clustering
 
 ### Steps Performed:
-- Elbow Method to determine optimal clusters
+- Used Elbow Method to determine optimal number of clusters
 - Selected K = 3
 - Applied K-Means clustering
-- Cluster visualization
-- Silhouette Score evaluation
-- Comparison with actual labels
+- Visualized clusters
+- Calculated Silhouette Score
+- Compared clusters with actual class labels
 
 ### 📊 Results:
-- Optimal clusters: 3
+- Optimal Clusters: 3
 - Silhouette Score: 0.551
-- Clusters closely align with actual species classes
+- Clusters closely align with actual species labels
+
+### Key Insight:
+Although clustering is unsupervised, K-Means successfully identified meaningful natural groupings in the dataset.
 
 ---
 
-## 📊 Model Comparison
+## 📊 Supervised vs Unsupervised Comparison
 
 | Supervised (KNN) | Unsupervised (K-Means) |
 |------------------|------------------------|
-| Uses labeled data | No labeled data used |
-| Predicts exact class | Discovers natural groups |
-| Evaluated using Accuracy | Evaluated using Inertia & Silhouette |
-| Higher predictive performance | Good structural grouping |
+| Uses labeled data | No labeled data |
+| Predicts exact species | Finds natural groupings |
+| Evaluated using Accuracy | Evaluated using Inertia & Silhouette Score |
+| Higher predictive performance | Meaningful structural grouping |
 
 ---
 
-## 🛠️ Tools and Technologies
+## 🛠️ Tools and Technologies Used
 
 - Python
 - Pandas
@@ -117,7 +127,7 @@ The dataset:
 - Matplotlib
 - Seaborn
 - Scikit-learn
-- Jupyter Notebook
+- Jupyter Notebook / Google Colab
 - Git & GitHub
 
 ---
@@ -127,7 +137,7 @@ The dataset:
 Day 1:
 - Dataset analysis
 - Data preprocessing
-- Initial EDA
+- Exploratory Data Analysis
 
 Day 2:
 - KNN implementation
@@ -136,8 +146,8 @@ Day 2:
 
 Day 3:
 - K-Means implementation
-- Elbow method
-- Silhouette score analysis
+- Elbow method analysis
+- Silhouette score calculation
 - Cluster comparison
 
 Day 4:
@@ -148,5 +158,15 @@ Day 4:
 ---
 
 ## ▶️ How to Run the Project
+
+### 🔹 Option 1: Open Directly in Google Colab
+
+Click below to run instantly:
+
+[Open in Google Colab](https://colab.research.google.com/github/krishna123-lang/ML-Supervised-Unsupervised-Iris/blob/main/ML_Project_Iris.ipynb)
+
+---
+
+### 🔹 Option 2: Run Locally
 
 1️⃣ Clone the repository:
